@@ -19,34 +19,34 @@ public class Calculator {
 	}
 	
 	/**
-	 * @return getTotal returns variable "total"
+	 * @return getTotal returns correct value of total
 	 */
 	public int getTotal () {
-		return 0;
+		return total;
 	}
 	
 	/**
 	 * Add
-	 * @param value is input number to be added
+	 * @param value is input number to be added to total
 	 */
 	public void add (int value) {
-		
+		total += value;
 	}
 	
 	/**
 	 * Subtract
-	 * @param value is input number to be subtracted
+	 * @param value is input number to be subtracted from total
 	 */
 	public void subtract (int value) {
-		
+		total -=value;
 	}
 	
 	/**
 	 * Multiply
-	 * @param value is input number to be multiplied
+	 * @param value is input number to be multiplied by total
 	 */
 	public void multiply (int value) {
-		
+		total *= value;
 	}
 	
 	/**
@@ -54,7 +54,10 @@ public class Calculator {
 	 * @param value is input number to be divided
 	 */
 	public void divide (int value) {
-		
+		if (value != 0)
+			total /= value;
+		else
+			System.out.println("Divie by zero error");
 	}
 	
 	/**
