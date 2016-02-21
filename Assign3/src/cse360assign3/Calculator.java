@@ -8,9 +8,13 @@ package cse360assign3;
  */
 
 public class Calculator {
-
+	/**
+	 * str contains history of all actions
+	 */
 	private int total;
+	private String str = "";
 	
+
 	/**
 	 * @param Calculator() default constructor. 
 	 */
@@ -32,6 +36,7 @@ public class Calculator {
 	 */
 	public void add (int value) {
 		total += value;
+		str += "+";
 	}
 	
 	/**
@@ -40,6 +45,7 @@ public class Calculator {
 	 */
 	public void subtract (int value) {
 		total -=value;
+		str += "-";
 	}
 	
 	/**
@@ -48,6 +54,7 @@ public class Calculator {
 	 */
 	public void multiply (int value) {
 		total *= value;
+		str += "*";
 	}
 	
 	/**
@@ -59,6 +66,7 @@ public class Calculator {
 			total /= value;
 		else
 			System.out.println("Divie by zero error");
+		str += "/";
 	}
 	
 	/**
@@ -66,6 +74,6 @@ public class Calculator {
 	 * @return returns history as string
 	 */
 	public String getHistory () {
-		return "";
+		return str;
 	}
 }

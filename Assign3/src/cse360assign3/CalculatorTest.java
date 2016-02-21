@@ -59,7 +59,11 @@ public class CalculatorTest {
 	@Test
 	public void testGetHistory() {
 		Calculator calc = new Calculator();
-		assertEquals("",calc.getHistory());
+		calc.add(0);
+		calc.subtract(0);
+		calc.multiply(0);
+		calc.divide(1);
+		assertEquals("+-*/",calc.getHistory());
 	}
 
 }
