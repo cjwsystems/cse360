@@ -63,7 +63,7 @@ public class CalculatorTest {
 		calc.subtract(0);
 		calc.multiply(0);
 		calc.divide(1);
-		assertEquals(" + - * /",calc.getHistory());
+		assertEquals("0 + 0 - 0 * 0 / 1 ",calc.getHistory());
 	}
 
 }

@@ -12,7 +12,7 @@ public class Calculator {
 	 * str contains history of all actions
 	 */
 	private int total;
-	private String str = "";
+	private String str = "0 ";
 	
 
 	/**
@@ -36,7 +36,7 @@ public class Calculator {
 	 */
 	public void add (int value) {
 		total += value;
-		str += " +";
+		str += "+ " + value + " ";
 	}
 	
 	/**
@@ -45,7 +45,7 @@ public class Calculator {
 	 */
 	public void subtract (int value) {
 		total -=value;
-		str += " -";
+		str += "- " + value + " ";
 	}
 	
 	/**
@@ -54,7 +54,7 @@ public class Calculator {
 	 */
 	public void multiply (int value) {
 		total *= value;
-		str += " *";
+		str += "* " + value + " ";
 	}
 	
 	/**
@@ -63,10 +63,10 @@ public class Calculator {
 	 */
 	public void divide (int value) {
 		if (value != 0)
-			total /= value;
+			total = total / value;
 		else
 			System.out.println("Divie by zero error");
-		str += " /";
+		str += "/ " + value + " ";
 	}
 	
 	/**
