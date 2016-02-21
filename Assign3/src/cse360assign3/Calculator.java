@@ -21,6 +21,7 @@ public class Calculator {
 	/**
 	 * @return getTotal returns correct value of total
 	 */
+	
 	public int getTotal () {
 		return total;
 	}

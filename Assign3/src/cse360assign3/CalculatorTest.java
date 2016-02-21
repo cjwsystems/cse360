@@ -62,5 +62,4 @@ public class CalculatorTest {
 		assertEquals("",calc.getHistory());
 	}
 
-
 }
